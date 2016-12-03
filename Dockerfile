@@ -1,3 +1,5 @@
+# docker build -t fbelov/java-7:latest .
+# docker push fbelov/java-7:latest
 #
 # OpenJDK Java 7 JDK Dockerfile
 #
@@ -21,4 +23,4 @@ WORKDIR /data
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 # Define default command.
-CMD ["bash"]
+CMD /sbin/my_init
